@@ -31,9 +31,13 @@ class Employee {
         System.out.println("Adjustment won: " + df.format(getIncreaseAmount()));
         System.out.println("In percentage: " + (int)percent + " %");
     }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
 }
 
-public class EmployeeMain {
+public class EmlployeeMain {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         double inputSalary = scanner.nextDouble();
